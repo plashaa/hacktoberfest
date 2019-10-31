@@ -1,0 +1,78 @@
+#include<iostream>
+#include<fstream>
+#include<cstring>
+#include<string>
+using namespace std;
+class student
+{
+	public:
+		int roll;
+		int age;
+		string name;
+	public:
+		void get_data();
+	//	search_data();
+		void display_data();
+}s1;
+
+    //class DEfinition outside the class.
+ void student::get_data()
+ {
+ 	fstream f1;
+ 	f1.open("record.txt",ios::out|ios::app);
+ 	cout<<"Enter The Rollno Of Student:"<<endl;
+    cin>>roll;
+    cout<<"Enter The Age Of The Student:"<<endl;
+    cin>>age;
+    cout<<"Enter the Name Of The Student:"<<endl;
+    cin>>name;
+    f1<<endl<<roll<<endl<<age<<endl<<name<<endl;
+    f1.close();
+}  
+
+void student::display_data()
+{
+	fstream f2;
+	f2.open("record.txt",ios::in|ios::app);
+	while(!f2.eof())
+	{
+	
+	 f2>>roll;
+	 f2>>age;
+	 f2>>name;
+	 cout<<"Rollno Entered By You"<<roll<<endl;
+	 cout<<"Age Entered By You"<<age<<endl;
+	 cout<<"Name Enterd By You"<<name<<endl;
+    }
+	 f2.close();
+ } 
+ 
+int main()
+{
+	int choice;
+	while(1)
+	{
+	cout<<"\t\t\t*Welcome In Main*"<<endl;
+	cout<<"\t\tPress(1)To Enter Data"<<endl;
+	cout<<"\t\tpress(2)To Display Data"<<endl;
+	cout<<"\t\tpress any key to Exit";
+	cout<<"\t\tEnter You Choice"<<endl;
+	cin>>choice;
+		 switch(choice)
+		 {
+		 	 case 1:
+		 	         s1.get_data();
+		 	         break;
+		 	  case 2:
+			        s1.display_data();
+					break;
+			 case 3:
+			         return 0;
+			        		       
+		 }
+	}
+         return 0;
+}
+	
+	
+  
