@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="sky">
+        </div>
+        <div id="title">
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 50px;">
+                RUNNING CAR ANIMATION
+            </p>
+        </div>
+        <div id="building" >
+            <img src="./images/city.png" alt="">
+        </div>
+        <div id="road-ani">
+            <img src="./images/road.jpg" alt="">
+        </div>
+        <div id="car">
+            <img src="./images/car.png" alt="" height="250px" width="500px">
+        </div>
+        <div id="wheel-over">
+            <img class="wheel" src="./images/wheel.png" alt="">
+            <img  class="wheel" src="./images/wheel.png" alt="" style="margin-left: 220px;">
+        </div>
+    </div>
+</body>
+</html>
