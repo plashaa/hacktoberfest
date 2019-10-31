@@ -1,0 +1,29 @@
+using System;
+
+   class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter value of i:");
+            int i = int.Parse(Console.ReadLine());
+            Console.WriteLine("value of i is:");
+            Console.WriteLine(i);
+            object o = i; //boxing
+            Console.WriteLine("Boxed value of i");
+            Console.WriteLine(o);
+            i = (int)o;//unboxing
+            Console.WriteLine("unboxed value of i "+i);
+            //Console.WriteLine(i);
+            Console.WriteLine("Enter float value:");
+            float j = float.Parse(Console.ReadLine());
+            Console.WriteLine("float value is");
+            Console.WriteLine(j);
+            Console.WriteLine("Enter a string");
+            string k = Console.ReadLine();
+            Console.WriteLine("Entered string is");
+            Console.WriteLine(k);
+            
+            
+            
+        }
+    }
