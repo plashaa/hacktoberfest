@@ -1,0 +1,86 @@
+
+<html>
+<head>
+	<h1>***************CALCULATOR*************************</h1>
+	<style>
+		#clear{
+			width: 110px;
+		}
+		.formstyle{
+			width: 140px;
+			height:275px;
+			margin: auto; 
+			border: 2px solid blue;
+			background-color: pink;
+			border-color: purple;
+		}
+		input[type="text"]{
+			width: 50px;
+			background-color: lightblue;
+			color: white;
+		}
+		#answerstyle{
+			width: 130px;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		body{
+			//*background-image: url(megha.jpg);*//
+			background-size: 20% 50%;
+			background-color: orange;
+
+
+		}
+	</style>
+
+	        <div class=  "formstyle">
+		    <form name=  "forms">
+			<input type= "text" name=" answer " id="answerstyle"> 
+
+			<br> </br>
+
+			<input type= "button" value=" 1 " onclick="forms.answerstyle.value += '1' "> 
+			<input type= "button" value=" 2 " onclick="forms.answerstyle.value += '2' ">
+			<input type= "button" value=" 3 " onclick="forms.answerstyle.value += '3' ">
+
+
+
+			<br> </br>
+
+			<input type= "button" value=" 4 " onclick="forms.answerstyle.value += '4' ">
+			<input type= "button" value=" 5 " onclick="forms.answerstyle.value += '5' ">
+			<input type= "button" value=" 6 " onclick="forms.answerstyle.value += '6' ">
+
+			<br> </br>
+
+			<input type= "button" value=" 7 " onclick="forms.answerstyle.value += '7' ">
+			<input type= "button" value=" 8 " onclick="forms.answerstyle.value += '8' ">
+			<input type= "button" value=" 9 " onclick="forms.answerstyle.value += '9' ">
+
+			<br> </br>
+
+			<input type= "button" value=" + " onclick="forms.answerstyle.value += '+' ">
+			<input type= "button" value=" - " onclick="forms.answerstyle.value += '-' ">
+			<input type= "button" value=" * " onclick="forms.answerstyle.value += '*' ">
+
+			<br> </br>
+
+			<input type= "button" value=" / " onclick="forms.answerstyle.value += '/' ">
+			<input type= "button" value=" 0 " onclick="forms.answerstyle.value += '0' ">
+			<input type= "button" value=" = " onclick="forms.answerstyle.value = eval(forms.answerstyle.value) ">
+
+			<br> </br>
+
+            <input type= "button" value=" clear All " onclick="forms.answerstyle.value = '' " id="clear">
+			
+			
+		</form>
+		
+	</div>
+
+</body>
+
+</html>
