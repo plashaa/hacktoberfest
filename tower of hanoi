@@ -1,0 +1,18 @@
+#include<stdio.h>
+ void tower(int,char,char,char);
+ void main()
+{
+    int n;
+    printf("How many plates?");
+    scanf("%d",&n);
+    tower(n,'A','B','C');
+}
+ void tower(int n,char x,char y,char z)
+{
+    if(n>0)
+    {
+        tower(n-1,x,z,y);
+        printf("\n%c -> %c",x,y);
+        tower(n-1,z,y,x);
+    }
+}
