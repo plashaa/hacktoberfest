@@ -4,23 +4,24 @@
 	<h1>***************CALCULATOR*************************</h1>
 	<style>
 		#clear{
-			width: 110px;
+			width: 100px;
 		}
 		.formstyle{
-			width: 140px;
-			height:275px;
+			width: 120px;
+			height:205px;
 			margin: auto; 
-			border: 2px solid blue;
-			background-color: pink;
-			border-color: purple;
+			border: 2px solid red;
+			background-color: yellow;
+			border-color: green;
 		}
 		input[type="text"]{
-			width: 50px;
+			width: 70px;
 			background-color: lightblue;
-			color: white;
+			color: yellow;
 		}
 		#answerstyle{
-			width: 130px;
+			width: 110px;
+			height: 120px;
 		}
 	</style>
 	<title></title>
